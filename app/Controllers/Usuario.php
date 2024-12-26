@@ -13,7 +13,7 @@ class Usuario extends BaseController
             $data = [];
             $rules = [
                 'usuario' => 'required|min_length[3]|max_length[20]|existsUser[usuario]',
-                'clave' => 'required|min_length[8]|max_length[20]|validateUser[usuario,clave]',
+                'clave' => 'required|min_length[8]|max_length[20]',
             ];
             $errors = [
                 'usuario' => [
